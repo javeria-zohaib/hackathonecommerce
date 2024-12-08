@@ -156,7 +156,7 @@ using modern web technologies.
           <img
             alt="ecommerce"
             className="object-cover object-center w-full h-full block"
-            src="/large.png"
+            src="/Large.png"
           />
         </a>
         <div className="mt-4">
@@ -255,7 +255,7 @@ using modern web technologies.
       <img
         className="object-cover object-center rounded h-full"
         alt="hero"
-        src="/image.png"
+        src="/Image.png"
       />
     </div>
   </div>
