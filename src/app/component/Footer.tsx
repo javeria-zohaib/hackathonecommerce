@@ -7,7 +7,7 @@ export default function Footer(){
         <footer className="text-gray-600 body-font bg-[#2A254B] h-[500px]">
   <div className="container px-5 py-20 mx-auto ">
     <div className="flex flex-wrap md:text-left text-center order-first mt-16">
-      <div className="lg:w-1/4 md:w-1/2 w-full px-4 mb-48">
+      <div className="lg:w-1/4 md:w-1/2 w-full px-4 mb-35">
         <h3 className="title-font font-medium text-white  text-[14px]tracking-widest text-sm mb-3">
           Menu
         </h3>
