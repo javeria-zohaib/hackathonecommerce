@@ -255,7 +255,7 @@ using modern web technologies.
       <img
         className="object-cover object-center rounded h-full"
         alt="hero"
-        src="/Image.png"
+        src="/flower.png"
       />
     </div>
   </div>
