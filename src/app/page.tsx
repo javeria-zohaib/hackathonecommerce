@@ -205,6 +205,33 @@ using modern web technologies.
   </div>
   
 </section>
+<section className=" body-font">
+  <div className="container px-5 py-24 mx-auto h-[481px]">
+    <div className="flex flex-col text-center w-full mb-12">
+      <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-[#2A254B]">
+      Join the club and get the benefits
+      </h1>
+      <p className="lg:w-2/3 mx-auto leading-relaxed text-2xl text-[#2A254B]">Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more
+      </p>
+    </div>
+    <div className="flex lg:w-2/3 w-full mx-auto items-center">
+      <div className="relative w-full max-w-lg ml-40">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-3 pl-4 pr-20 transition-colors duration-200 ease-in-out "
+        />
+        <button className="absolute right-1 top-1/2 transform -translate-y-1/2 text-white bg-[#2A254B] border-0 py-4 px-6 focus:outline-none hover:bg-indigo-600 rounded text-sm">
+          Signup
+        </button>
+      </div>
+      </div>
+    </div>
+  
+</section>
+
 
 
 
