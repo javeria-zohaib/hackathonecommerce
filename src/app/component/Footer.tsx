@@ -4,10 +4,10 @@ import { SlSocialSkype } from "react-icons/sl";
 export default function Footer(){
     return(
         <>
-        <footer className="text-gray-600 body-font bg-[#2A254B] h-[350px]">
-  <div className="container px-5 py-20 mx-auto">
-    <div className="flex flex-wrap md:text-left text-center order-first">
-      <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+        <footer className="text-gray-600 body-font bg-[#2A254B] h-[500px]">
+  <div className="container px-5 py-20 mx-auto ">
+    <div className="flex flex-wrap md:text-left text-center order-first mt-16">
+      <div className="lg:w-1/4 md:w-1/2 w-full px-4 mb-48">
         <h3 className="title-font font-medium text-white  text-[14px]tracking-widest text-sm mb-3">
           Menu
         </h3>
@@ -77,7 +77,7 @@ export default function Footer(){
           </li>
         </nav>
       </div>
-      <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+      <div className="lg:w-1/4 md:w-1/2 w-full px-4  ">
        
         <div className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start  ">
           <div className="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-5">
@@ -103,7 +103,7 @@ export default function Footer(){
       </div>
     </div>
     
-    <div className=" px-5 py-6 mx-auto flex items-center sm:flex-row flex-col border-t-[0.5px] border-white">
+    <div className=" px-5 py-6 mx-auto flex items-center sm:flex-row flex-col border-t-[0.5px] border-white ">
       
       
         <a
