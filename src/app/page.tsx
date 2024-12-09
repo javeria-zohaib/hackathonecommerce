@@ -40,35 +40,41 @@ using modern web technologies.
   </div>
 </section>
 <section className="py-12">
-  <h3 className="flex  justify-center items-center mb-10 text-2xl text-[#2A254B]">What makes  our brand different</h3>
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6 text-[#4E4D93]" >
-    <div className="flex flex-col ">
-    <CiDeliveryTruck />
-    <h4>Next day as standard</h4>
-    <p>Order before 3pm and get your order
-    the next day as standard</p>
+  <h3 className="flex justify-center items-center mb-10 text-2xl text-[#2A254B] text-center">
+    What makes our brand different
+  </h3>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 sm:px-6 text-[#4E4D93]">
+    <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+      <CiDeliveryTruck className="text-4xl mb-4" />
+      <h4 className="text-lg font-medium mb-2">Next day as standard</h4>
+      <p className="text-sm">
+        Order before 3pm and get your order the next day as standard
+      </p>
     </div>
-    <div className="flex flex-col ">
-    <CiCircleCheck />
-      <h4>Made by true artisans</h4>
-      <p>Handmade crafted goods made with
-      real passion and craftmanship</p>
+    <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+      <CiCircleCheck className="text-4xl mb-4" />
+      <h4 className="text-lg font-medium mb-2">Made by true artisans</h4>
+      <p className="text-sm">
+        Handmade crafted goods made with real passion and craftsmanship
+      </p>
     </div>
-    <div className="flex flex-col ">
-    <IoFolderOutline />
-      
-      <h4>Unbeatable prices</h4>
-      <p>For our materials and quality you won’t find better prices anywhere</p>
+    <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+      <IoFolderOutline className="text-4xl mb-4" />
+      <h4 className="text-lg font-medium mb-2">Unbeatable prices</h4>
+      <p className="text-sm">
+        For our materials and quality, you won’t find better prices anywhere
+      </p>
     </div>
-    <div className="flex flex-col ">
-    <PiPlantThin />
-      <h4>Recycled packaging
-      </h4>
-      <p>We use 100% recycled packaging to ensure our footprint is manageable</p>
+    <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+      <PiPlantThin className="text-4xl mb-4" />
+      <h4 className="text-lg font-medium mb-2">Recycled packaging</h4>
+      <p className="text-sm">
+        We use 100% recycled packaging to ensure our footprint is manageable
+      </p>
     </div>
-
   </div>
 </section>
+
 
   
 
@@ -251,9 +257,9 @@ using modern web technologies.
        
       </div>
     </div>
-    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 h-[603px] ">
+    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-[720px] h-[603px] ">
       <img
-        className="object-cover object-center rounded h-full"
+        className="object-cover object-center rounded h-full w-full"
         alt="hero"
         src="/flower.png"
       />
