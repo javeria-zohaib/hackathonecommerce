@@ -167,7 +167,7 @@ using modern web technologies.
           <p className="mt-1 text-[#4E4D93]">€900</p>
         </div>
       </div>
-      <div className="lg:w-[22%] md:w-[48%] w-full ml-44 px-2">
+      <div className="lg:w-[22%] md:w-[48%] w-full mx-auto px-2">
         <a className="block relative h-[375px] rounded overflow-hidden">
           <img
             alt="ecommerce"
@@ -215,7 +215,7 @@ using modern web technologies.
       </p>
     </div>
     <div className="flex lg:w-2/3 w-full mx-auto items-center">
-      <div className="relative w-full max-w-lg ml-40">
+      <div className="relative w-full max-w-lg mx-auto">
         <input
           type="email"
           id="email"
