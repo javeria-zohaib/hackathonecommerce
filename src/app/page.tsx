@@ -251,7 +251,7 @@ using modern web technologies.
        
       </div>
     </div>
-    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 h-[603px]">
+    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 h-[603px] ">
       <img
         className="object-cover object-center rounded h-full"
         alt="hero"
