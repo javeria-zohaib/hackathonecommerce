@@ -1,84 +1,98 @@
-import Link from 'next/link';
-import React from 'react';
-import { FaLinkedin, FaInstagram, FaFacebookSquare, FaTwitter, FaPinterest } from "react-icons/fa";
-import { IoLogoSkype } from "react-icons/io";
+import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button"
+import { Facebook, Twitter, Instagram, Linkedin, PinIcon as Pinterest, WebcamIcon as Skype } from 'lucide-react'
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <>
-      <div className='px-6 md:px-12 py-8 bg-[#2A254B] mt-8'>
-        <div className="flex flex-wrap gap-12 md:gap-[100px] lg:gap-[200px]">
-          {/* Menu Section */}
-          <div className="text-gray-500 w-full sm:w-auto">
-            <h1 className="text-lg md:text-xl font-bold">Menu</h1>
-            <div className='space-y-2'>
-              <h1><Link href={'/'}>New Arrivals</Link></h1>
-              <h1><Link href={'/'}>Best sellers</Link></h1>
-              <h1><Link href={'/'}>Recently viewed</Link></h1>
-              <h1><Link href={'/'}>Popular this week</Link></h1>
-              <h1><Link href={'/'}>All Products</Link></h1>
-            </div>
+    <footer className="bg-[#2A254B] text-white px-6 py-16 md:px-12">
+      <div className="max-w-[1440px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+          {/* Menu Column */}
+          <div className="space-y-6">
+            <h3 className="text-base font-normal">Menu</h3>
+            <nav className="flex flex-col space-y-4">
+              <a href="#" className="text-sm hover:underline">New arrivals</a>
+              <a href="#" className="text-sm hover:underline">Best sellers</a>
+              <a href="#" className="text-sm hover:underline">Recently viewed</a>
+              <a href="#" className="text-sm hover:underline">Popular this week</a>
+              <a href="#" className="text-sm hover:underline">All products</a>
+            </nav>
           </div>
 
-          {/* Categories Section */}
-          <div className="text-gray-500 w-full sm:w-auto">
-            <h1 className="text-lg md:text-xl font-bold">Categories</h1>
-            <div className='space-y-2'>
-              <h1><Link href={'/'}>Crockery</Link></h1>
-              <h1><Link href={'/'}>Furniture</Link></h1>
-              <h1><Link href={'/'}>Homeware</Link></h1>
-              <h1><Link href={'/'}>Plant pots</Link></h1>
-              <h1><Link href={'/'}>Chairs</Link></h1>
-            </div>
+          {/* Categories Column */}
+          <div className="space-y-6">
+            <h3 className="text-base font-normal">Categories</h3>
+            <nav className="flex flex-col space-y-4">
+              <a href="#" className="text-sm hover:underline">Crockery</a>
+              <a href="#" className="text-sm hover:underline">Furniture</a>
+              <a href="#" className="text-sm hover:underline">Homeware</a>
+              <a href="#" className="text-sm hover:underline">Plant pots</a>
+              <a href="#" className="text-sm hover:underline">Chairs</a>
+              <a href="#" className="text-sm hover:underline">Crockery</a>
+            </nav>
           </div>
 
-          {/* Company Section */}
-          <div className="text-gray-500 w-full sm:w-auto">
-            <h1 className="text-lg md:text-xl font-bold">Our Company</h1>
-            <div className='space-y-2'>
-              <h1><Link href='/about'>About us</Link></h1>
-              <h1><Link href={'/'}>Vacancies</Link></h1>
-              <h1><Link href={'/'}>Contact us</Link></h1>
-              <h1><Link href={'/'}>Privacy</Link></h1>
-              <h1><Link href={'/'}>Return policy</Link></h1>
-            </div>
+          {/* Our Company Column */}
+          <div className="space-y-6">
+            <h3 className="text-base font-normal">Our company</h3>
+            <nav className="flex flex-col space-y-4">
+              <a href="#" className="text-sm hover:underline">About us</a>
+              <a href="#" className="text-sm hover:underline">Vacancies</a>
+              <a href="#" className="text-sm hover:underline">Contact us</a>
+              <a href="#" className="text-sm hover:underline">Privacy</a>
+              <a href="#" className="text-sm hover:underline">Returns policy</a>
+            </nav>
           </div>
 
-          {/* Mailing List Section */}
-          <div className="text-white w-full sm:w-auto">
-            <h1 className="text-lg md:text-xl font-bold">Join our mailing list</h1>
-            <div className='mt-4'>
-              <input
-                type="text"
-                placeholder="your@email.com"
-                className='w-full sm:w-[250px] lg:w-[300px] h-[48px] p-2 bg-transparent opacity-35 border border-white rounded-md'
+          {/* Join Mailing List */}
+          <div className="space-y-6">
+            <h3 className="text-base font-normal">Join our mailing list</h3>
+            <div className="flex gap-2 w-full">
+              <Input 
+                type="email" 
+                placeholder="your@email.com" 
+                className="bg-[#393653] border-none text-white placeholder:text-gray-400 h-12 w-full"
               />
-              <button className='mt-2 sm:mt-0 sm:ml-2 w-full sm:w-[100px] h-[48px] bg-white text-[#2A254B] rounded-md'>
+              <Button 
+                className="bg-white text-black hover:bg-gray-100 h-12 px-6"
+              >
                 Sign up
-              </button>
+              </Button>
             </div>
           </div>
         </div>
 
-        <hr className='bg-[#4E4D93] my-8' />
-
-        {/* Footer Bottom Section */}
-        <div className='flex flex-wrap justify-between items-center text-white gap-4'>
-          <div>
-            <h1>Copyright 2022 Avion LTD</h1>
-          </div>
-          <div className='flex gap-4'>
-            <Link href={'/'}><FaLinkedin size={20} /></Link>
-            <Link href={'/'}><FaFacebookSquare size={20} /></Link>
-            <Link href={'/'}><FaInstagram size={20} /></Link>
-            <Link href={'/'}><IoLogoSkype size={20} /></Link>
-            <Link href={'/'}><FaTwitter size={20} /></Link>
-            <Link href={'/'}><FaPinterest size={20} /></Link>
+        {/* Footer Bottom */}
+        <div className="flex flex-col md:flex-row justify-between items-center mt-16 pt-8 border-t border-[#4E4D93]">
+          <p className="text-sm mb-6 md:mb-0">Copyright 2022 Avion LTD</p>
+          <div className="flex items-center space-x-6">
+            <a href="#" className="hover:text-gray-300">
+              <Linkedin className="w-5 h-5" />
+              <span className="sr-only">LinkedIn</span>
+            </a>
+            <a href="#" className="hover:text-gray-300">
+              <Facebook className="w-5 h-5" />
+              <span className="sr-only">Facebook</span>
+            </a>
+            <a href="#" className="hover:text-gray-300">
+              <Instagram className="w-5 h-5" />
+              <span className="sr-only">Instagram</span>
+            </a>
+            <a href="#" className="hover:text-gray-300">
+              <Skype className="w-5 h-5" />
+              <span className="sr-only">Skype</span>
+            </a>
+            <a href="#" className="hover:text-gray-300">
+              <Twitter className="w-5 h-5" />
+              <span className="sr-only">Twitter</span>
+            </a>
+            <a href="#" className="hover:text-gray-300">
+              <Pinterest className="w-5 h-5" />
+              <span className="sr-only">Pinterest</span>
+            </a>
           </div>
         </div>
       </div>
-    </>
-  );
-};
-
-export default Footer;
+    </footer>
+  )
+}
